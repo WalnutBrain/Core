@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.Core", "WalnutBrain.Core\WalnutBrain.Core.csproj", "{A591DEB0-F0A7-4228-A970-81F1807264CE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.LogThis", "WalnutBrain.LogThis\WalnutBrain.LogThis.csproj", "{98326EB4-1585-41A5-82F9-3578E12713EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.Core", "src\WalnutBrain.Core\WalnutBrain.Core.csproj", "{A591DEB0-F0A7-4228-A970-81F1807264CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.LogThis.NLog", "WalnutBrain.LogThis.NLog\WalnutBrain.LogThis.NLog.csproj", "{0A321EFA-3B7F-4483-A4D0-B694665F6E61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.LogThis", "src\WalnutBrain.LogThis\WalnutBrain.LogThis.csproj", "{98326EB4-1585-41A5-82F9-3578E12713EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.LogThis.NLog", "src\WalnutBrain.LogThis.NLog\WalnutBrain.LogThis.NLog.csproj", "{0A321EFA-3B7F-4483-A4D0-B694665F6E61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A591DEB0-F0A7-4228-A970-81F1807264CE} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
+		{98326EB4-1585-41A5-82F9-3578E12713EC} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
+		{0A321EFA-3B7F-4483-A4D0-B694665F6E61} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
 	EndGlobalSection
 EndGlobal
