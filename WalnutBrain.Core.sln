@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.LogThis.NLog", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.Configuration", "src\WalnutBrain.Configuration\WalnutBrain.Configuration.csproj", "{42B6CF88-DD89-43D8-84F3-76C403D60925}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1EA728F7-2D67-40A7-97A1-936AAFCDA1DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveTests", "tests\PrimitiveTests\PrimitiveTests.csproj", "{603994A8-D056-4B63-814E-9C9172B0B5DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{42B6CF88-DD89-43D8-84F3-76C403D60925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42B6CF88-DD89-43D8-84F3-76C403D60925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42B6CF88-DD89-43D8-84F3-76C403D60925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603994A8-D056-4B63-814E-9C9172B0B5DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603994A8-D056-4B63-814E-9C9172B0B5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603994A8-D056-4B63-814E-9C9172B0B5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603994A8-D056-4B63-814E-9C9172B0B5DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +52,6 @@ Global
 		{98326EB4-1585-41A5-82F9-3578E12713EC} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
 		{0A321EFA-3B7F-4483-A4D0-B694665F6E61} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
 		{42B6CF88-DD89-43D8-84F3-76C403D60925} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
+		{603994A8-D056-4B63-814E-9C9172B0B5DD} = {1EA728F7-2D67-40A7-97A1-936AAFCDA1DC}
 	EndGlobalSection
 EndGlobal
