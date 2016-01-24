@@ -1,27 +1,33 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace WalnutBrain.Configuration
 {
     public class ConfigaratorSection<T> : ConfiguratorSectionBase<T>
     {
-        public ConfigaratorSection(string name, T obj) : base(name, JToken.FromObject(obj).ToString(Formatting.Indented))
+        public ConfigaratorSection(string name, T obj, ISectionReadWriter writer, Uri uri) : base(name, obj, writer, uri)
         {
         }
 
-        public ConfigaratorSection(string name, string json) : base(name, json)
+        public ConfigaratorSection(string name, ISectionReadWriter readWriter, Uri uri) : base(name, readWriter, uri)
         {
         }
 
-        public T Value
+        public override T Value
         {
-            get { return InternalValue; }
-            set { InternalValue = value; }
+            get { return ValueBase; }
+            set { ValueBase = value; }
         }
 
-        public void Patch(string patch)
+        public override void Patch(string patch)
         {
             ApplyPatch(patch);
+        }
+
+        public override void Write()
+        {
+            WriteBase();
         }
 
     }

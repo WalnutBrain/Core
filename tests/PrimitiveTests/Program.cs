@@ -33,7 +33,7 @@ namespace PrimitiveTests
                 Val3 = new[] { 1, 2, 3, 9 }
             };
 
-            var section1 = new ConfigaratorSection<A>("test", a1);
+            var section1 = new ConfigaratorSection<A>("test", a1, null, null);
             Console.WriteLine(section1.ToString());
             Console.WriteLine();
 
@@ -46,7 +46,7 @@ namespace PrimitiveTests
             Console.WriteLine(section1.Diff());
             Console.WriteLine();
 
-            var section2 = new ConfigaratorSection<A>("test", a2);
+            var section2 = new ConfigaratorSection<A>("test", a2, null, null);
             Console.WriteLine(section2.ToString());
             Console.WriteLine();
 

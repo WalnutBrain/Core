@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -135,9 +134,4 @@ namespace WalnutBrain.Configuration
             throw new NotImplementedException();
         }
     }*/
-
-    public interface ISectionReadWriter
-    {
-        string Read(Uri source);
-    }
 }

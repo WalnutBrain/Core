@@ -1,4 +1,5 @@
-﻿using System.CodeDom;
+﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Dynamic;
 
@@ -6,9 +7,10 @@ namespace WalnutBrain.Configuration
 {
     public interface IConfigurator
     {
-        IConfigurator Add<T>(bool isUser = false) where T : ICfgSection;
-        IConfigurator Add<T>(string filePath) where T : ICfgSection;
-        T Get<T>() where T : ICfgSection;
+        IConfigurator Register<T>(string name, Uri uri = null);
+        ConfiguratorSectionBase<T> Get<T>(string name);
+        
+
         //IConfigurator Patch<T>(string patch) where T : ICfgSection;
     }
 }
