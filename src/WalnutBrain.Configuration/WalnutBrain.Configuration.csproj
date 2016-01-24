@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigaratorSection.cs" />
+    <Compile Include="ConfigSection.cs" />
     <Compile Include="Configurator.cs" />
     <Compile Include="ConfiguratorException.cs" />
     <Compile Include="ICfgSection.cs" />
