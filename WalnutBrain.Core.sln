@@ -13,7 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1EA728F7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveTests", "tests\PrimitiveTests\PrimitiveTests.csproj", "{603994A8-D056-4B63-814E-9C9172B0B5DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.ThisNLog", "WalnutBrain.ThisNLog\WalnutBrain.ThisNLog.csproj", "{76DCE211-A557-4566-9154-1FAC5DCA11BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.ThisNLog", "src\WalnutBrain.ThisNLog\WalnutBrain.ThisNLog.csproj", "{76DCE211-A557-4566-9154-1FAC5DCA11BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{FDF5EEDE-A309-470D-BF4F-209314106EC2}"
+	ProjectSection(SolutionItems) = preProject
+		Libraries\JsonDiffPatch.dll = Libraries\JsonDiffPatch.dll
+		Libraries\JsonDiffPatch.pdb = Libraries\JsonDiffPatch.pdb
+		Libraries\Tavis.JsonPointer.dll = Libraries\Tavis.JsonPointer.dll
+		Libraries\Tavis.JsonPointer.pdb = Libraries\Tavis.JsonPointer.pdb
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

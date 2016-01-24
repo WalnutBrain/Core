@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace WalnutBrain.Configuration
-{
+{/*
     public class Configurator : IConfigurator
     {
         private Configurator()
@@ -129,5 +129,15 @@ namespace WalnutBrain.Configuration
             public ICfgSection Deserialized { get; private set; }
             public string FilePath { get; private set; }
         }
+
+        public ISectionReadWriter GetUrlReadWriter(string scheme)
+        {
+            throw new NotImplementedException();
+        }
+    }*/
+
+    public interface ISectionReadWriter
+    {
+        string Read(Uri source);
     }
 }
