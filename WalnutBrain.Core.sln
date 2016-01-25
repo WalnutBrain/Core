@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}"
 EndProject
@@ -15,13 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveTests", "tests\Pri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.ThisNLog", "src\WalnutBrain.ThisNLog\WalnutBrain.ThisNLog.csproj", "{76DCE211-A557-4566-9154-1FAC5DCA11BA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{FDF5EEDE-A309-470D-BF4F-209314106EC2}"
-	ProjectSection(SolutionItems) = preProject
-		Libraries\JsonDiffPatch.dll = Libraries\JsonDiffPatch.dll
-		Libraries\JsonDiffPatch.pdb = Libraries\JsonDiffPatch.pdb
-		Libraries\Tavis.JsonPointer.dll = Libraries\Tavis.JsonPointer.dll
-		Libraries\Tavis.JsonPointer.pdb = Libraries\Tavis.JsonPointer.pdb
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalnutBrain.StateMachine", "src\WalnutBrain.StateMachine\WalnutBrain.StateMachine.csproj", "{A1BBF471-34C7-4258-97C3-FA5404FB603C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +39,10 @@ Global
 		{76DCE211-A557-4566-9154-1FAC5DCA11BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76DCE211-A557-4566-9154-1FAC5DCA11BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76DCE211-A557-4566-9154-1FAC5DCA11BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BBF471-34C7-4258-97C3-FA5404FB603C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BBF471-34C7-4258-97C3-FA5404FB603C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BBF471-34C7-4258-97C3-FA5404FB603C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BBF471-34C7-4258-97C3-FA5404FB603C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +52,6 @@ Global
 		{42B6CF88-DD89-43D8-84F3-76C403D60925} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
 		{603994A8-D056-4B63-814E-9C9172B0B5DD} = {1EA728F7-2D67-40A7-97A1-936AAFCDA1DC}
 		{76DCE211-A557-4566-9154-1FAC5DCA11BA} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
+		{A1BBF471-34C7-4258-97C3-FA5404FB603C} = {E6A29F82-939F-44D9-8DD7-0B8CBBA864A0}
 	EndGlobalSection
 EndGlobal
